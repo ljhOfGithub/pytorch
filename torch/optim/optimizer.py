@@ -187,7 +187,7 @@ class Optimizer(object):
         self.__setstate__({'state': state, 'param_groups': param_groups})
 
     def zero_grad(self, set_to_none: bool = False):
-        r"""Sets the gradients of all optimized :class:`torch.Tensor` s to zero.
+        r"""Sets the gradients of all optimized :class:`torch.Tensor` s to zero.设置所有优化的:class: ' torch的梯度。张量到0。
 
         Args:
             set_to_none (bool): instead of setting to zero, set the grads to None.
@@ -228,7 +228,7 @@ class Optimizer(object):
                         torch._foreach_zero_(grads)
 
     def step(self, closure):
-        r"""Performs a single optimization step (parameter update).
+        r"""Performs a single optimization step (parameter update).更新参数 
 
         Args:
             closure (callable): A closure that reevaluates the model and
